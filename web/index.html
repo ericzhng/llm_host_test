@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Service Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LLM Service Tester</h1>
+
+        <h2>Create API Key</h2>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" placeholder="e.g., user1">
+        <button onclick="createApiKey()">Create Key</button>
+
+        <h2>Predict</h2>
+        <label for="apiKey">API Key:</label>
+        <input type="text" id="apiKey" placeholder="Paste your API key here">
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" placeholder="e.g., Hello, world!">
+        <button onclick="predict()">Predict</button>
+
+        <h2>Revoke API Key</h2>
+        <label for="revokeKey">API Key to Revoke:</label>
+        <input type="text" id="revokeKey" placeholder="Paste API key to revoke">
+        <button onclick="revokeApiKey()">Revoke Key</button>
+
+        <h2>Output</h2>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
